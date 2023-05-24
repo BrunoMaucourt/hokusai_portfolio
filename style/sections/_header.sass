@@ -1,0 +1,34 @@
+@use '../helper/_responsive' as responsive
+@use '../helper/_color' as color
+    
+header
+    display: flex
+    justify-content: center
+    flex-direction: column
+    padding: 30px
+    @include responsive.screen-min(576px)
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+    a
+        color: color.$primary-color
+        text-decoration: none
+
+.header__title
+    font-size: xx-large
+    text-transform: uppercase
+    text-align: center
+    @include responsive.screen-min(576px)
+        text-align: left
+
+nav
+    min-width: 300px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    gap: 25px
+    margin-top: 25px
+    @include responsive.screen-min(576px)
+        flex-direction: row
+        margin-top: 0px

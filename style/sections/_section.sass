@@ -1,0 +1,90 @@
+@use '../helper/_responsive' as responsive
+@use '../helper/_color' as color
+
+section 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 50px
+    padding-bottom: 50px
+
+h1
+    font-size: 45px
+    
+.intro
+    padding: 10%
+    display: flex
+    flex-direction: column-reverse
+    justify-content: center
+    background-color: color.$primary-color
+    gap: 50px
+    @include responsive.screen-min(576px)
+        flex-direction: row 
+        gap: 25px
+    &__biographyColumn
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 100%
+        color: white
+    &__portraitColumn
+        display: flex
+        flex-direction: column
+        width: 50%
+        color: white
+        position: relative
+    &__text
+        margin-top: 25px
+        margin-bottom: 25px
+
+.hokusaiPortrait
+    &__border
+        position: absolute
+        bottom: 0
+        right: 0
+        transform: translate(50%, 50%)
+        height: 50px
+        width: 50px
+        border-right: 1px solid white
+        border-bottom: 1px solid white
+
+.paintsList
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    gap: 25px
+    margin-top: 50px
+    margin-bottom: 25px
+    padding-left: 5%
+    padding-right: 5%
+    &__picture
+        width: 350px
+        height: 230px
+        overflow: hidden
+        &:hover
+            opacity: 0.6
+
+.section__form
+    padding: 10%
+    display: flex
+    flex-direction: column
+    background-color: color.$primary-color
+    h2 
+        color: white
+
+.sectionBiography
+    display: grid
+    grid-template-columns: 1fr min(60ch, calc(100% - 64px)) 1fr
+    grid-column-gap: 32px
+    > *
+        grid-column: 2
+        margin-top: 15px
+        margin-bottom: 15px
+    &__fullBleed
+        width: 100%
+        grid-column: 1 / 4
+        height: 200px
+        overflow: hidden

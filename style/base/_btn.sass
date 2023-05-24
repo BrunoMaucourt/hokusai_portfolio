@@ -1,0 +1,19 @@
+@use '../helper/_color' as color
+
+.btn
+    width: 200px
+    padding: 25px
+    margin-top: 25px
+    margin-bottom: 25px
+    border: none
+    border-radius: 20px
+    background-color: lighten(color.$primary-color, 20%)
+    color: white
+    display: flex
+    justify-content: center
+    align-content: center
+    &:hover
+        background-color: lighten(color.$primary-color, 30%)
+    a
+        text-decoration: none!important
+        border: 2px solid red

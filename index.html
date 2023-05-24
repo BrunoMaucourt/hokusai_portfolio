@@ -4,91 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <h2 class="header__title textColorMain">
+        <h2 class="header__titlen">
             Hokusai
         </h2>
         <nav>
-            <a href="#" class="linksWithoutUnderline">Accueil</a>
-            <a href="#" class="linksWithoutUnderline">36 vues</a>
-            <a href="#" class="linksWithoutUnderline">A propos</a>
+            <a href="#">Accueil</a>
+            <a href="#">36 vues</a>
+            <a href="biography.html">Biographie</a>
         </nav>
     </header>
     <main>
-        <section class="intro__container sectionBackground">
+        <section class="intro">
             <div class="intro__biographyColumn">
                 <h1>Katsushika HOKUSAI</h1>
-                <p>Katsushika Hokusai (葛飾 北斎) est un peintre, dessinateur et graveur japonais du XVIIIe siècle, spécialiste de l’ukiyo-e, ainsi que l'auteur d'écrits populaires, surtout connu sous le nom de Hokusai (北斎), ou son surnom de Gakyōjin, littéralement « Vieux Fou de dessin ».</p>
+                <p class="intro__text">Katsushika Hokusai (葛飾 北斎) est un peintre, dessinateur et graveur japonais du XVIIIe siècle, spécialiste de l’ukiyo-e, ainsi que l'auteur d'écrits populaires, surtout connu sous le nom de Hokusai (北斎), ou son surnom de Gakyōjin, littéralement « Vieux Fou de dessin ».</p>
                 <div>
                     <a href="#" class="linksWithoutUnderline btn">
                         Plus d'informations
                     </a>
                 </div>
             </div>
-            <figure class="paintHokusai">
-                <img src="./pictures/Portrait_of_Hokusai_by_Keisai_Eisen.jpg" alt="Potrait de Hokusai">
-                <div id="paintBorder"></div>
+            <figure class="intro__portraitColumn">
+                <img src="./pictures/Portrait_of_Hokusai_by_Keisai_Eisen.jpg" alt="Potrait de Hokusai" class="hokusaiPortrait">
+                <div class="hokusaiPortrait__border"></div>
             </figure>
         </section>
-        <section id="">
-            <h2 class="textColorMain">Les Trente-six vues du mont Fuji</h2>
+        <section>
+            <h2>Les Trente-six vues du mont Fuji</h2>
             <div class="paintsList">
-                <a href="#" class="paintsContainer">
-                    <img src="./pictures/800px-A_sketch_of_the_Mitsui_shop_in_Suruga_street_in_Edo.jpg" alt="" class="paints">
+                <a href="#">
+                    <img src="./pictures/800px-A_sketch_of_the_Mitsui_shop_in_Suruga_street_in_Edo.jpg" alt="" class="paintsList__picture">
                 </a>
-                <a href="#" class="paintsContainer">
-                    <img src="./pictures/800px-Ejiri_in_the_Suruga_province.jpg" alt="" class="paints">
+                <a href="#">
+                    <img src="./pictures/800px-Ejiri_in_the_Suruga_province.jpg" alt="" class="paintsList__picture">
                 </a>
-                <a href="#" class="paintsContainer">
-                    <img src="./pictures/800px-Lake_Suwa_in_the_Shinano_province.jpg" alt="" class="paints">
+                <a href="#">
+                    <img src="./pictures/800px-Lake_Suwa_in_the_Shinano_province.jpg" alt="" class="paintsList__picture">
                 </a>
-                <a href="#" class="paintsContainer">
-                    <img src="./pictures/800px-The_Fuji_from_the_mountains_of_Totomi.jpg" alt="" class="paints">
+                <a href="#">
+                    <img src="./pictures/800px-The_Fuji_from_the_mountains_of_Totomi.jpg" alt="" class="paintsList__picture">
                 </a>
-                <a href="#" class="paintsContainer">
-                    <img src="./pictures/800px-Ushibori_in_the_Hitachi_province.jpg" alt="" class="paints">
+                <a href="#">
+                    <img src="./pictures/800px-Ushibori_in_the_Hitachi_province.jpg" alt="" class="paintsList__picture">
                 </a>
-                <a href="#" class="paintsContainer">
-                    <img src="./pictures/Sunset_across_the_Ryogoku_bridge_from_the_bank_of_the_Sumida_river_at_Onmagayashi.jpg" alt="" class="paints">
+                <a href="#" >
+                    <img src="./pictures/Sunset_across_the_Ryogoku_bridge_from_the_bank_of_the_Sumida_river_at_Onmagayashi.jpg" alt="" class="paintsList__picture">
                 </a>
             </div>
             <a href="#" class="linksWithoutUnderline btn">Voir les autres oeuvres</a>
         </section>
-        <section id="sectionForm" class="sectionBackground">
+        <section class="section__form">
             <h2>Laisser un commentaire</h2>
-            <form action="#" method="post">
-                <fieldset id="formFieldsetNom">
+            <form action="#" method="post" class="contactForm">
+                <fieldset class="contactForm__fieldsetName">
                     <label for="nom">Votre nom</label>
                     <input type="text" name="nom" required>
                 </fieldset>
-                <fieldset id="formFieldsetEmail">
+                <fieldset class="contactForm__fieldsetEmail">
                     <label for="email">Votre email</label>
                     <input type="email" name="email" required>
                 </fieldset>
-                <fieldset id="formFieldsetMessage">
+                <fieldset class="contactForm__fieldsetMessage">
                     <label for="message">Votre message</label>
                     <textarea name="message" required> </textarea>
                 </fieldset>
-                <fieldset id="formFieldsetSubmit">
+                <fieldset class="contactForm__fieldsetSubmit">
                     <input type="submit" class="btn">
                 </fieldset>
             </form>
         </section>
         <footer>
-            <h2 class="textColorMain">
-                HOKUSAI
+            <h2>
+                Hokusai
             </h2>
             <div class="footer__socialMedia">
                 <a href="#">
-                    <img src="pictures/facebook.png" alt="Logo 1" class="footer__socialMediaIcon">
+                    <img src="pictures/facebook.png" alt="Logo 1" class="footer__socialMediaPicture">
                 </a>
                 <a href="#">
-                    <img src="pictures/whatsapp.png" alt="Logo 2" class="footer__socialMediaIcon">
+                    <img src="pictures/whatsapp.png" alt="Logo 2" class="footer__socialMediaPicture">
                 </a>
             </div>
         </footer>
