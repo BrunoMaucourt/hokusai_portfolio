@@ -1,5 +1,6 @@
 @use '../helper/_responsive' as responsive
 @use '../helper/_color' as color
+@use '../helper/_mixins' as mixins
 
 section 
     display: flex
@@ -10,10 +11,11 @@ section
     padding-bottom: 50px
 
 h1
-    font-size: 45px
+    font-size: 3rem
     
 .intro
-    padding: 10%
+    padding-left: 10%
+    padding-right: 10%
     display: flex
     flex-direction: column-reverse
     justify-content: center
@@ -64,6 +66,7 @@ h1
         width: 350px
         height: 230px
         overflow: hidden
+        @include mixins.colored-shadow($color: #222222)
         &:hover
             opacity: 0.6
 

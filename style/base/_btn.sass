@@ -1,4 +1,5 @@
 @use '../helper/_color' as color
+@use '../helper/_mixins' as mixins
 
 .btn
     width: 200px
@@ -12,6 +13,7 @@
     display: flex
     justify-content: center
     align-content: center
+    @include mixins.colored-shadow($color: #08597e)
     &:hover
         background-color: lighten(color.$primary-color, 30%)
     a
