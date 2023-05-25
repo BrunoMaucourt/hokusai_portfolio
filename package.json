@@ -1,0 +1,13 @@
+{
+  "name": "hokusaiportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style/style.sass:./style/style.css",
+    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
