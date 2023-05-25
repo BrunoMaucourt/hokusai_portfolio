@@ -1,18 +1,15 @@
-@use '../helper/_responsive' as responsive
-@use '../helper/_color' as color
-
 footer
     display: flex
     flex-direction: column
     justify-content: space-between
     flex-wrap: wrap
     padding: 30px
-    @include responsive.screen-min(576px)
+    @include screen-min(576px)
         flex-direction: row
     h2
-        color: color.$primary-color
+        color: $primary-color
         text-align: center
-        @include responsive.screen-min(576px)
+        @include screen-min(576px)
             text-align: left
 
 .footer__socialMedia
@@ -21,7 +18,7 @@ footer
     justify-content: space-around
     align-items: center
     min-width: 200px
-    @include responsive.screen-min(576px)
+    @include screen-min(576px)
         flex-direction: row
     &Picture
         width: 50px

@@ -1,8 +1,4 @@
-@use '../helper/_responsive' as responsive
-@use '../helper/_color' as color
-@use '../helper/_mixins' as mixins
-
-section 
+section
     display: flex
     flex-direction: column
     justify-content: center
@@ -12,17 +8,17 @@ section
 
 h1
     font-size: 3rem
-    
+
 .intro
     padding-left: 10%
     padding-right: 10%
     display: flex
     flex-direction: column-reverse
     justify-content: center
-    background-color: color.$primary-color
+    background-color: $primary-color
     gap: 50px
-    @include responsive.screen-min(576px)
-        flex-direction: row 
+    @include screen-min(576px)
+        flex-direction: row
         gap: 25px
     &__biographyColumn
         display: flex
@@ -66,7 +62,7 @@ h1
         width: 350px
         height: 230px
         overflow: hidden
-        @include mixins.colored-shadow($color: #222222)
+        @include colored-shadow($color: #222222)
         &:hover
             opacity: 0.6
 
@@ -74,8 +70,8 @@ h1
     padding: 10%
     display: flex
     flex-direction: column
-    background-color: color.$primary-color
-    h2 
+    background-color: $primary-color
+    h2
         color: white
 
 .sectionBiography
